@@ -1,0 +1,237 @@
+* Add this CSS to your existing styles.css or create a new CSS file */
+
+:root {
+  /* Color Palette */
+  --rich-black: #0d1b2aff;
+  --oxford-blue: #1b263bff;
+  --yinmn-blue: #415a77ff;
+  --silver-lake-blue: #778da9ff;
+  --platinum: #e0e1ddff;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif; /* Use Google Font 'Montserrat' */
+  background-color: var(--platinum);
+  color: var(--rich-black);
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+header {
+  background-color: var(--rich-black);
+  padding: 20px 0;
+}
+
+.logo {
+  font-size: 32px;
+  font-weight: bold;
+  color: var(--platinum);
+  text-align: center;
+}
+
+nav {
+  text-align: center;
+  margin-top: 10px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  margin: 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--platinum);
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+nav a:hover {
+  background-color: var(--oxford-blue);
+}
+
+.cta-btn {
+  background-color: var(--yinmn-blue);
+  color: var(--platinum);
+  padding: 12px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.cta-btn:hover {
+  background-color: var(--oxford-blue);
+}
+
+#hero h1 {
+  font-size: 48px;
+  margin-bottom: 30px;
+}
+
+#hero .cta-btn {
+  margin-top: 30px;
+}
+
+.about {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.about-img img {
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-text {
+  flex: 1;
+  padding: 20px;
+  background-color: var(--yinmn-blue);
+  border-radius: 10px;
+  margin-left: 20px;
+}
+
+.about-text h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: var(--platinum);
+}
+
+.skills-list li {
+  margin-bottom: 15px;
+  color: var(--platinum);
+}
+
+#projects {
+  margin-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.project-card {
+  flex: 0 0 calc(30% - 20px); /* Adjust the width of the project cards */
+  background-color: var(--yinmn-blue);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+  margin-bottom: 20px;
+}
+
+.project-img {
+  height: 150px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.project-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.project-info {
+  text-align: center;
+}
+
+.project-info h3 {
+  font-size: 20px;
+  margin-top: 10px;
+  color: var(--platinum);
+}
+
+.project-info p {
+  margin-top: 10px;
+  line-height: 1.4;
+  color: var(--platinum);
+}
+
+.project-info a {
+  background-color: var(--oxford-blue);
+  color: var(--platinum);
+  padding: 8px 16px;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 10px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.project-info a:hover {
+  background-color: var(--yinmn-blue);
+}
+
+#contact {
+  background-color: var(--silver-lake-blue);
+  padding: 50px 0;
+}
+
+#contact form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+#contact input,
+#contact textarea {
+  flex: 0 0 48%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#contact textarea {
+  resize: vertical;
+}
+
+#contact button {
+  background-color: var(--oxford-blue);
+  color: var(--platinum);
+  padding: 12px 24px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+#contact button:hover {
+  background-color: var(--yinmn-blue);
+}
+
+footer {
+  background-color: var(--rich-black);
+  padding: 10px 0;
+  text-align: center;
+}
+
+footer p {
+  margin: 0;
+  color: var(--platinum);
+}
